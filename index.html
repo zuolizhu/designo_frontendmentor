@@ -1,6 +1,18 @@
 ---
 layout: default
 title: Home | Designo Agency Website Challenge | Frontend Mentor
+hero_heading: Award-winning custom designs and digital branding solutions
+hero_body: With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.
 ---
 
-<h1 class="t-h1">Designo</h1>
+<section class="home-hero">
+  <div class="container">
+    <div class="home-hero__content">
+      <h1 class="home-hero__heading t-h1 t-white">{{ page.hero_heading }}</h1>
+      <p class="t-body2 t-white home-hero__body">{{ page.hero_body }}</p>
+      <a class="button button--primary button--primary--ondark" href="/about">Learn More</a>
+    </div>
+    <div class="home-hero__phone">
+    </div>
+  </div>
+</section>
