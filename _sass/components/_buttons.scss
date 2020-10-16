@@ -1,0 +1,35 @@
+.button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.button--primary {
+  width: 15.2rem;
+  height: 5.6rem;
+  cursor: pointer;
+  align-items: center;
+  display: inline-flex;
+  border-radius: .8rem;
+  justify-content: center;
+  text-transform: uppercase;
+  @include fontbase(1.5rem, 2.2rem, var(--weight-mid), .1rem);
+  transition: var(--transition) color, var(--transition) background-color;
+}
+
+.button--primary--ondark {
+  color: var(--color-dark-gray);
+  background-color: var(--color-white);
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-light-peach);
+  }
+}
+
+.button--primary--onlight {
+  color: var(--color-white);
+  background-color: var(--color-peach);
+  &:hover {
+    background-color: var(--color-light-peach);
+  }
+}
