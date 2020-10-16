@@ -3,10 +3,10 @@
 
 // Abstracts
 @import "abstracts/variables";
-@import "abstracts/fonts";
 
 // Base styles
 @import "base/reset";
+@import "base/typography";
 
 // Components
 @import "components/buttons";
@@ -14,3 +14,6 @@
 
 // Layouts
 @import "layouts/main-navigation";
+
+// Pages
+@import "pages/home";

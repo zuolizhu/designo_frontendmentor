@@ -1,6 +1,8 @@
 .button {
+  padding: 0;
   border: none;
   outline: none;
+  cursor: pointer;
   background: none;
 }
 
@@ -31,5 +33,22 @@
   background-color: var(--color-peach);
   &:hover {
     background-color: var(--color-light-peach);
+  }
+}
+
+.button--burger {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  
+  @media (min-width: 768px) {
+    display: none;
+  }
+  
+  &__icon {
+    display: none;
+  }
+  &__icon.show {
+    display: block;
   }
 }

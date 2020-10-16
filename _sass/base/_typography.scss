@@ -27,3 +27,15 @@
 .t-body {
   @include fontbase(1.6rem, 2.6rem, var(--weight-regular), 0);
 }
+
+.t-mobile-nav-link {
+  color: var(--color-white);
+  text-transform: uppercase;
+  @include fontbase(2.4rem, 2.5rem, var(--weight-regular), .2rem);
+}
+
+.t-desktop-nav-link {
+  text-transform: uppercase;
+  color: var(--color-dark-gray);
+  @include fontbase(1.4rem, 1.4rem, var(--weight-regular), .2rem);
+}
