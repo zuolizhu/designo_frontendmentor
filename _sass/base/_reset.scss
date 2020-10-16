@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Jost', sans-serif;
+  background-color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}

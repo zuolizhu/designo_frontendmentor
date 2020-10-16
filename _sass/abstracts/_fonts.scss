@@ -1,0 +1,29 @@
+@mixin fontbase($size, $height, $weight, $letterspacing) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  letter-spacing: $letterspacing;
+}
+
+// Type Specs
+.t-h1 {
+  @include fontbase(3.2rem, 3.6rem, var(--weight-mid), 0);
+  @media (min-width: 768px) {
+    @include fontbase(4.8rem, 4.8rem, var(--weight-mid), 0);
+  }
+}
+
+.t-h2 {
+  @include fontbase(2.8rem, 3.6rem, var(--weight-mid), .14rem);
+  @media (min-width: 768px) {
+    @include fontbase(4rem, 4.8rem, var(--weight-mid), .2rem);
+  }
+}
+
+.t-h3 {
+  @include fontbase(2rem, 2.6rem, var(--weight-mid), .5rem);
+}
+
+.t-body {
+  @include fontbase(1.6rem, 2.6rem, var(--weight-regular), 0);
+}

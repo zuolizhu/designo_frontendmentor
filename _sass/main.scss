@@ -1,4 +1,12 @@
-body,
-h1 {
-  margin: 0;
-}
+// Abstracts
+@import "abstracts/variables";
+@import "abstracts/fonts";
+
+// Base styles
+@import "base/reset";
+
+// Components
+@import "components/buttons";
+
+// Layouts
+@import "layouts/main-navigation";
